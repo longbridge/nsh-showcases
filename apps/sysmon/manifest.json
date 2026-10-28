@@ -1,0 +1,24 @@
+{
+  "id": "sysmon",
+  "name": "sysmon",
+  "author": "huacnlee",
+  "description": "A native system monitor with live CPU, GPU, memory, disk and network charts, per-app activity, and local developer workloads such as dev servers, coding assistants and Docker containers in one workspace.",
+  "category": "utility",
+  "platforms": [
+    "Windows",
+    "macOS",
+    "Linux",
+    "iOS",
+    "Android"
+  ],
+  "website": null,
+  "source": "https://github.com/huacnlee/sysmon",
+  "publishedAt": "2026-10-28T16:00:00+08:00",
+  "previews": [
+    "preview0.png",
+    "preview1.png",
+    "preview2.png"
+  ],
+  "stars": 14,
+  "starsUpdatedAt": "2026-10-28T07:50:58.600Z"
+}

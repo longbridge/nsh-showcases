@@ -1,0 +1,18 @@
+{
+  "id": "mado",
+  "name": "Mado",
+  "author": "Longbridge",
+  "description": "A reading-first Markdown app for AI-generated plans, specs and reports: polished typography, folder workspaces, outline and search, Source and Split editing, and clean pages to export or share.",
+  "category": "work",
+  "platforms": [
+    "macOS"
+  ],
+  "website": "https://madomd.com",
+  "source": null,
+  "publishedAt": "2026-10-28T16:00:00+08:00",
+  "previews": [
+    "preview0.png",
+    "preview1.png",
+    "preview2.png"
+  ]
+}

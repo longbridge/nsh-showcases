@@ -1,0 +1,19 @@
+{
+  "id": "disktree",
+  "name": "Disktree",
+  "author": "huacnlee",
+  "description": "A native disk-space explorer with a nested, color-coded treemap, pinch-to-zoom navigation and a reviewed path to the system Trash for the files and folders you mark.",
+  "category": "utility",
+  "platforms": [
+    "macOS",
+    "Linux"
+  ],
+  "website": null,
+  "source": "https://github.com/huacnlee/disktree",
+  "publishedAt": "2026-10-28T16:00:00+08:00",
+  "previews": [
+    "preview0.png"
+  ],
+  "stars": 15,
+  "starsUpdatedAt": "2026-10-28T07:50:58.600Z"
+}
