@@ -97,8 +97,6 @@ To preview App Stories, clone this repository next to the NSH checkout (`../nsh-
 
 Add a `DOCS_DISPATCH_TOKEN` Actions secret to this repository: a dedicated fine-grained token scoped only to `longbridge/nsh` with **Actions: write**. The default `GITHUB_TOKEN` cannot dispatch workflows in another repository. See [GitHub's dispatch permissions](https://docs.github.com/en/rest/actions/workflows#create-a-workflow-dispatch-event).
 
-While this repository is private, add a `SHOWCASES_TOKEN` Actions secret to `longbridge/nsh`: a fine-grained token with **Contents: read** on `longbridge/nsh-showcases`, which the Website workflow checks the catalog out with. A public catalog needs no token.
-
 Until the dispatch secret is configured, catalog checks and Stars updates can run, but dispatch fails with an actionable error. Rerun after setup. Allow the automation bot to commit star metadata on `main` if branch rules are enabled.
 
 ## Attribution
