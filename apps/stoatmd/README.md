@@ -2,7 +2,7 @@
 
 **Note-taking built for the agent era.**
 
-StoatMD is a native macOS Markdown notebook, built with Native Shell. Your agent drafts straight into a local folder; you open the same folder to read, edit, and keep writing. Files stay plain `.md` on disk—no proprietary database, no StoatMD account.
+StoatMD is a native Markdown notebook for Mac and iPhone, built with Native Shell. On Mac it ships as a desktop app; on iPhone it is available through TestFlight as an internal beta. Your agent drafts straight into a local folder; you open the same folder to read, edit, and keep writing. Files stay plain `.md` on disk—no proprietary database, no StoatMD account.
 
 ## Reading and writing
 
