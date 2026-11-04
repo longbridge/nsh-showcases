@@ -1,0 +1,24 @@
+{
+  "id": "noop",
+  "name": "Noop",
+  "author": "huacnlee",
+  "description": "Your own AI team: Claude Code and Codex agents run on your own computers, do your daily work and only ask you when something really needs you. Follow the team, answer decisions and manage machines from any device.",
+  "category": "work",
+  "platforms": [
+    "macOS",
+    "Linux",
+    "Windows",
+    "Android",
+    "iOS",
+    "Web"
+  ],
+  "website": "https://huacnlee.github.io/noop/",
+  "source": "https://github.com/huacnlee/noop",
+  "publishedAt": "2026-11-04T16:00:00+08:00",
+  "previews": [
+    "preview0.png",
+    "preview1.png",
+    "preview2.png",
+    "preview3.png"
+  ]
+}
