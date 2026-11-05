@@ -16,10 +16,16 @@ JSON responses fold by their structure and filter by JSONPath. Server-sent event
 
 ## Environments and the palette
 
+![Environments edited as text, with the variables each one ends up with](preview2.png)
+
 Environments are JSON files: shared values, one block per environment, and a private file for secrets that stays out of Git. The Command-K palette finds requests and commands, turns a pasted curl-style command into a request with its base URL and secrets replaced by variables, and any request can be copied back out as curl.
+
+![A pasted curl-style command becomes a request, its base URL and secret replaced by variables](preview3.png)
 
 ## Built for AI agents
 
 The same core runs the desktop app, the command line and an MCP server. Agents edit `.http` files with their own tools, run them and get structured JSON back, and the app reloads files as they change.
+
+![The same window in the dark appearance](preview4.png)
 
 [GitHub repository](https://github.com/lvwxx/callme)
