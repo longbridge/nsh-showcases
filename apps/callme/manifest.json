@@ -1,0 +1,13 @@
+{
+  "id": "callme",
+  "name": "callme",
+  "author": "lvwxx",
+  "description": "A simple, fast, AI-friendly API client. Requests live in plain-text .http files that the desktop app, the command line and AI agents (over MCP) all run the same way, with live server-sent events and per-phase timing.",
+  "category": "dev",
+  "platforms": ["macOS"],
+  "website": null,
+  "source": "https://github.com/lvwxx/callme",
+  "building": true,
+  "publishedAt": "2026-11-05T00:00:00+08:00",
+  "previews": ["preview0.png", "preview1.png"]
+}
