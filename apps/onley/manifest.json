@@ -4,10 +4,21 @@
   "author": "fdaio",
   "description": "Find and remove duplicate files and photos without leaving your machine. Scan folders on the desktop or the photo library on a phone, review each group, keep the copy you want and delete the rest after one confirmation.",
   "category": "utility",
-  "platforms": ["macOS", "Windows", "iOS"],
+  "platforms": [
+    "macOS",
+    "Windows",
+    "iOS"
+  ],
   "website": "https://fdaio.github.io/onley/",
   "source": "https://github.com/fdaio/onley",
   "building": true,
   "publishedAt": "2026-11-05T23:00:00+08:00",
-  "previews": ["preview0.png", "preview1.png", "preview2.png", "preview3.png"]
+  "previews": [
+    "preview0.png",
+    "preview1.png",
+    "preview2.png",
+    "preview3.png"
+  ],
+  "stars": 3,
+  "starsUpdatedAt": "2026-11-06T07:21:01.990Z"
 }
