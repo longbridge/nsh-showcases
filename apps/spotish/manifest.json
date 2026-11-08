@@ -1,0 +1,13 @@
+{
+  "id": "spotish",
+  "name": "Spotish",
+  "author": "huacnlee",
+  "description": "An unofficial native Spotify client for macOS, Windows, Linux and the terminal. A Rust engine drives Spotify's own web player in a hidden browser; a native NSH interface draws it, with music-reactive shaders, layered animation and live Omarchy themes.",
+  "category": "media",
+  "platforms": ["macOS", "Linux", "Windows"],
+  "website": "https://huacnlee.github.io/spotish",
+  "source": "https://github.com/huacnlee/spotish",
+  "building": true,
+  "publishedAt": "2026-11-08T00:00:00+08:00",
+  "previews": ["preview0.png", "preview1.png", "preview2.png", "preview3.png", "preview4.png", "preview5.png"]
+}
