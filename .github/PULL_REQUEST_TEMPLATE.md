@@ -1,3 +1,5 @@
+<!-- Keep the section that matches your submission and delete the other. -->
+
 ## App
 
 Describe the product, the platforms it ships on, which of its UI Native Shell renders, and its current implementation status.
@@ -11,3 +13,12 @@ Describe the product, the platforms it ships on, which of its UI Native Shell re
 - [ ] Ran `bun test` and `bun run validate`.
 
 Every merged app PR is listed in App Stories. Maintainers select and periodically adjust Featured placement; it is not guaranteed.
+
+## Directory entry
+
+Describe the project, what it adds to Native Shell apps, and which Native Shell version it works with.
+
+- [ ] Added only `directory/<id>/manifest.json`, with a lowercase kebab-case folder and matching `id`.
+- [ ] Provided `author`, a public `https` `source`, a `category` (`library`, `component`, `template` or `tool`) and an English `description` within 280 weighted characters.
+- [ ] Left `publishedAt` confirmation and Stars metadata to maintainers/automation.
+- [ ] Ran `bun test` and `bun run validate`.

@@ -75,3 +75,15 @@ test('writes only changed manifests and leaves repeated refreshes untouched', as
   assert.equal(await updateCatalogStars(root, { ...options, now: '2026-09-12T00:00:00Z' }), 0);
   assert.equal((await stat(changedPath)).mtimeMs, mtime);
 });
+
+test('refreshes directory entries next to apps', async t => {
+  const root = await mkdtemp(join(tmpdir(), 'stars-directory-'));
+  t.after(() => rm(root, { recursive: true, force: true }));
+  await mkdir(join(root, 'directory', 'forms'), { recursive: true });
+  await writeFile(join(root, 'directory', 'README.md'), '# Directory');
+  const path = join(root, 'directory', 'forms', 'manifest.json');
+  await writeFile(path, JSON.stringify({ id: 'forms', source: 'https://github.com/owner/forms', stars: null }));
+  const options = { now: '2026-11-09T00:00:00Z', warn: () => {}, request: async () => ({ ok: true, json: async () => ({ stargazers_count: 12 }) }) };
+  assert.equal(await updateCatalogStars(root, options), 1);
+  assert.equal(JSON.parse(await readFile(path, 'utf8')).stars, 12);
+});

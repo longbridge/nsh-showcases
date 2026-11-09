@@ -11,6 +11,52 @@ export const CATEGORIES = ['dev', 'finance', 'work', 'media', 'utility'];
 /** The platforms Native Shell apps run on, spelled as manifests write them. */
 export const PLATFORMS = ['iOS', 'Android', 'macOS', 'Windows', 'Linux', 'Web'];
 
+/** Directory entry categories, in the order the website lists them. */
+export const DIRECTORY_CATEGORIES = ['library', 'component', 'template', 'tool'];
+
+const ID = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
+const isText = value => typeof value === 'string' && value.trim().length > 0;
+const isDate = value => typeof value === 'string' && /^\d{4}-\d{2}-\d{2}T.*(?:Z|[+-]\d{2}:\d{2})$/.test(value) && Number.isFinite(Date.parse(value));
+
+/**
+ * Validates `directory/<id>/manifest.json`: community libraries, components,
+ * templates and tools for Native Shell. The folder is optional; returns the
+ * number of entries.
+ */
+export async function validateDirectory(root) {
+  let entries;
+  try { entries = await readdir(join(root, 'directory'), { withFileTypes: true }); }
+  catch (error) { if (error.code === 'ENOENT') return 0; throw error; }
+  let count = 0;
+  for (const entry of entries) {
+    const id = entry.name;
+    if (id === 'README.md' && entry.isFile()) continue;
+    assert(entry.isDirectory() && ID.test(id), `Invalid directory folder: ${id}`);
+    const files = await readdir(join(root, 'directory', id));
+    assert.deepEqual(files, ['manifest.json'], `directory/${id}: only manifest.json is allowed`);
+    const item = JSON.parse(await readFile(join(root, 'directory', id, 'manifest.json'), 'utf8'));
+    const allowed = ['id', 'name', 'author', 'description', 'category', 'platforms', 'source', 'website', 'publishedAt', 'stars', 'starsUpdatedAt'];
+    for (const key of Object.keys(item)) assert(allowed.includes(key), `directory/${id}: unknown field ${key}`);
+    assert.equal(item.id, id, `directory/${id}: manifest ID must match its folder`);
+    assert(isText(item.name) && isText(item.author), `directory/${id}: name and author are required`);
+    assert(DIRECTORY_CATEGORIES.includes(item.category), `directory/${id}: invalid category; use ${DIRECTORY_CATEGORIES.join(', ')}`);
+    assert(isText(item.description), `directory/${id}: English description required`);
+    assert(twitterText.parseTweet(item.description).weightedLength <= 280, `directory/${id}: description exceeds 280 weighted characters`);
+    if (item.platforms !== undefined) {
+      assert(Array.isArray(item.platforms) && item.platforms.length, `directory/${id}: platforms must be a nonempty list when present`);
+      for (const platform of item.platforms) assert(PLATFORMS.includes(platform), `directory/${id}: unknown platform ${platform}; use ${PLATFORMS.join(', ')}`);
+      assert.equal(new Set(item.platforms).size, item.platforms.length, `directory/${id}: duplicate platforms`);
+    }
+    assert(isText(item.source) && new URL(item.source).protocol === 'https:', `directory/${id}: a public https source repository is required`);
+    if (item.website != null) assert(new URL(item.website).protocol === 'https:', `directory/${id}: invalid website URL`);
+    assert(isDate(item.publishedAt), `directory/${id}: publishedAt must be an ISO 8601 timestamp with timezone`);
+    assert(item.stars == null || (Number.isInteger(item.stars) && item.stars >= 0), `directory/${id}: invalid stars`);
+    assert(item.starsUpdatedAt == null || isDate(item.starsUpdatedAt), `directory/${id}: invalid starsUpdatedAt`);
+    count++;
+  }
+  return count;
+}
+
 export async function validateCatalog(root) {
   const ids = [];
   const text = value => typeof value === 'string' && value.trim().length > 0;
@@ -77,5 +123,7 @@ export async function validateCatalog(root) {
 }
 
 if (import.meta.main) {
-  console.log(`Validated ${await validateCatalog(join(dirname(fileURLToPath(import.meta.url)), '..'))} app manifests and screenshots`);
+  const root = join(dirname(fileURLToPath(import.meta.url)), '..');
+  console.log(`Validated ${await validateCatalog(root)} app manifests and screenshots`);
+  console.log(`Validated ${await validateDirectory(root)} directory entries`);
 }

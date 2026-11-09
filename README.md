@@ -1,6 +1,13 @@
 # Native Shell Showcases
 
-Submit your Native Shell app through a pull request to appear in [App Stories](https://nsh.dev/apps).
+The community catalog behind nsh.dev. It accepts two kinds of submissions, each in its own folder:
+
+| Folder | What | Published at |
+| --- | --- | --- |
+| `apps/` | Apps built with Native Shell, with screenshots | [App Stories](https://nsh.dev/apps) |
+| `directory/` | Libraries, components, templates and tools for building Native Shell apps | [Directory](https://nsh.dev/directory) |
+
+Submit through a pull request. Use one PR per app or directory entry.
 
 **Every merged app PR is listed. Featured placement is not guaranteed.** Maintainers select Featured apps based on project history, implementation, completeness and quality, and revisit the selection as apps evolve to highlight complete, representative examples.
 
@@ -70,9 +77,41 @@ The root `featured.json` is an ordered array of app IDs, for example `["nsh-gall
 - CI checks Markdown links, reference links, autolinks, plain URLs, encoded links, file size, and command patterns. Maintainers also review whether the content is strictly a product introduction. Violations must be resolved before merging.
 - Product images and videos are allowed: Markdown images and HTML `img`, `video`, `source` tags with safe attributes. Media must be committed in the same app folder and referenced by local filename. No external media URLs, event handlers or styles. Videos must have controls. See [CONTRIBUTING.md](CONTRIBUTING.md).
 
+## Submit a directory entry
+
+The Directory lists community projects that other Native Shell developers build with: native capability libraries (biometrics, secure storage, Firebase…), UI components, starter templates and developer tools. Apps belong in `apps/`.
+
+1. Fork this repository and create `directory/<id>/manifest.json`, using the same lowercase kebab-case ID rules as apps. The folder holds the manifest only.
+2. Open a PR. Maintainers review that the project is public, works with a current Native Shell release and is described accurately, then confirm `publishedAt`. Every merged entry is listed.
+
+```json
+{
+  "id": "secure-storage",
+  "name": "Secure Storage",
+  "author": "Author or organization",
+  "description": "Keychain and Keystore backed storage for Native Shell apps.",
+  "category": "library",
+  "platforms": ["iOS", "Android", "macOS"],
+  "source": "https://github.com/owner/secure-storage",
+  "website": null,
+  "publishedAt": "2026-11-09T00:00:00Z"
+}
+```
+
+| Field | Requirement |
+| --- | --- |
+| `id`, `name`, `author` | Required; same rules as apps. |
+| `description` | Required English string, at most 280 weighted characters. |
+| `category` | `library` (native capabilities and integrations), `component` (UI components), `template` (starters and examples) or `tool` (CLI, editor and build tooling). |
+| `platforms` | Optional; omit when the project is platform independent. Same values as apps. |
+| `source` | Required public `https` source repository. |
+| `website` | Optional documentation or project website, or `null`. |
+| `publishedAt` | First inclusion time, confirmed by maintainers. |
+| `stars`, `starsUpdatedAt` | Automation-owned, as for apps. |
+
 ## Automated updates and publication
 
-On merges to `main`, the workflow validates the catalog, refreshes GitHub Stars, commits updated manifests, and dispatches `website.yml` in `longbridge/nsh`. The same refresh runs every **Monday at 00:00 UTC (08:00 Singapore time)**, and can be run manually.
+On merges to `main`, the workflow validates the catalog, refreshes GitHub Stars for apps and directory entries, commits updated manifests, and dispatches `website.yml` in `longbridge/nsh`. The same refresh runs every **Monday at 00:00 UTC (08:00 Singapore time)**, and can be run manually.
 
 The Website workflow checks out the latest Showcase `main`, validates it with this repository's own scripts, reads the manifests, cached stars and optional READMEs, then publishes nsh.dev. The site serves each app's screenshots and README media from its own build, so App Stories publishes the reviewed files exactly as merged. There is no manual metadata copy into the NSH repository.
 
