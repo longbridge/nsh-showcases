@@ -1,0 +1,10 @@
+{
+  "id": "nsh-platform-harmonyos",
+  "name": "HarmonyOS Platform",
+  "author": "huacnlee",
+  "description": "Run Native Shell apps on HarmonyOS and OpenHarmony with ArkUI's native views. nsh package and nsh run --target harmonyos build a DevEco Studio project and its HAP, install it with hdc, and embed NSH in existing HarmonyOS apps. ArkUI backend by @richerfu.",
+  "category": "library",
+  "source": "https://github.com/huacnlee/nsh-platform-harmonyos",
+  "website": null,
+  "publishedAt": "2026-11-09T00:00:00Z"
+}
