@@ -27,7 +27,14 @@ export async function refreshStars(apps, { request = fetch, now = new Date().toI
 }
 
 export async function updateCatalogStars(root: string, options = {}) {
-  const paths = (await readdir(join(root, 'apps'))).sort().map(id => join(root, 'apps', id, 'manifest.json'));
+  const paths = [];
+  for (const folder of ['apps', 'directory']) {
+    let entries = [];
+    try { entries = await readdir(join(root, folder), { withFileTypes: true }); }
+    catch (error) { if (error.code !== 'ENOENT') throw error; }
+    const ids = entries.filter(entry => entry.isDirectory()).map(entry => entry.name).sort();
+    paths.push(...ids.map(id => join(root, folder, id, 'manifest.json')));
+  }
   const apps = await Promise.all(paths.map(async path => JSON.parse(await readFile(path, 'utf8'))));
   const before = apps.map(app => JSON.stringify(app));
   await refreshStars(apps, options);

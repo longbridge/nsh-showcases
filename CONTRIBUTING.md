@@ -1,5 +1,7 @@
 # Contribution guidelines
 
+This repository takes two kinds of submissions: apps built with Native Shell in `apps/`, and libraries, components, templates and tools for Native Shell in `directory/`. The sections below cover apps; directory entries only need `directory/<id>/manifest.json` as described in [README.md](README.md#submit-a-directory-entry), with no screenshots or README.
+
 ## Listing and Featured
 
 Every merged app PR is listed in App Stories. Featured placement is not guaranteed. Maintainers select and periodically adjust Featured apps based on project history, implementation, completeness and quality, aiming to highlight complete, representative products as applications evolve.
