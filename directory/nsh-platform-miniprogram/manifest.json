@@ -1,0 +1,10 @@
+{
+  "id": "nsh-platform-miniprogram",
+  "name": "WeChat Mini Program Platform",
+  "author": "huacnlee",
+  "description": "A demonstration platform that runs Native Shell apps in WeChat Mini Programs, built on NSH's public platform extension points: nsh package --target miniprogram writes a Mini Program project. Not maintained long term; maintainers welcome.",
+  "category": "library",
+  "source": "https://github.com/huacnlee/nsh-platform-miniprogram",
+  "website": null,
+  "publishedAt": "2026-11-09T00:00:00Z"
+}
