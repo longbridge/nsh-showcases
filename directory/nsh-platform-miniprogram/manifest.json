@@ -1,0 +1,10 @@
+{
+  "id": "nsh-platform-miniprogram",
+  "name": "nsh-platform-miniprogram",
+  "author": "huacnlee",
+  "description": "Demonstration backend for running Rust Native Shell apps in WeChat Mini Programs. A worked example of NSH platform extensions; not an official platform and seeking long-term maintainers.",
+  "category": "library",
+  "source": "https://github.com/huacnlee/nsh-platform-miniprogram",
+  "website": null,
+  "publishedAt": "2026-11-09T00:00:00Z"
+}
