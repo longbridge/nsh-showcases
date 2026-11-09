@@ -1,0 +1,15 @@
+{
+  "id": "native-shell-with-ns",
+  "name": "NativeScript in Native Shell",
+  "author": "nstudio",
+  "description": "Experimental NativeScript integration for calling AppKit, UIKit and Android APIs directly from Native Shell TSX apps, with native views and live updates. Requires NSH patches; not an official release.",
+  "category": "library",
+  "platforms": [
+    "macOS",
+    "iOS",
+    "Android"
+  ],
+  "source": "https://github.com/nstudio/native-shell-with-ns",
+  "website": null,
+  "publishedAt": "2026-11-09T00:00:00Z"
+}
