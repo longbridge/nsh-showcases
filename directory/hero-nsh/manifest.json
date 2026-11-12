@@ -1,0 +1,10 @@
+{
+  "id": "hero-nsh",
+  "name": "hero-nsh",
+  "author": "c-w-xiaohei",
+  "description": "An unofficial port of HeroUI v3's components to Native Shell, written in TSX. 60+ components, the shipped theme and the geometry they need; no React runtime.",
+  "category": "component",
+  "source": "https://github.com/c-w-xiaohei/hero-nsh",
+  "website": "https://c-w-xiaohei.github.io/hero-nsh/",
+  "publishedAt": "2026-11-12T00:00:00Z"
+}
