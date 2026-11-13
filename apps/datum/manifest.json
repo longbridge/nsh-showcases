@@ -4,9 +4,19 @@
   "author": "wenlingang",
   "description": "A native database client for PostgreSQL, MySQL, SQLite and Redis: SQL editor with schema-aware completion, table browsing and editing, impact preview and undo for writes, diagnostics, schema compare, SSH tunnels and an AI assistant that queries read-only.",
   "category": "dev",
-  "platforms": ["macOS", "Windows", "Linux"],
+  "platforms": [
+    "macOS",
+    "Windows",
+    "Linux"
+  ],
   "website": "https://wenlingang.github.io/datum/",
   "source": "https://github.com/wenlingang/datum",
   "publishedAt": "2026-11-13T00:00:00+08:00",
-  "previews": ["preview0.png", "preview1.png", "preview2.png"]
+  "previews": [
+    "preview0.png",
+    "preview1.png",
+    "preview2.png"
+  ],
+  "stars": 0,
+  "starsUpdatedAt": "2026-11-13T08:18:30.506Z"
 }
