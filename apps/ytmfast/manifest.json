@@ -1,0 +1,17 @@
+{
+  "id": "ytmfast",
+  "name": "YTMFast",
+  "author": "niuguy",
+  "description": "An unofficial native YouTube Music client built with Native Shell, forked from Spotish. Browse recommendations, search music, manage playlists and your library, and listen with lyrics, queue controls and a floating mini player.",
+  "category": "media",
+  "platforms": [
+    "macOS",
+    "Windows",
+    "Linux"
+  ],
+  "source": "https://github.com/niuguy/ytmfast",
+  "publishedAt": "2026-11-13T00:00:00+08:00",
+  "previews": [
+    "preview0.png"
+  ]
+}
