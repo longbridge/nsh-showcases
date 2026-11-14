@@ -1,0 +1,21 @@
+{
+  "id": "pipi",
+  "name": "pipi",
+  "author": "blueberrycongee",
+  "description": "A native desktop control surface for coding agents. Drives Pi, Claude Code, Codex, Devin, Cursor, OpenCode, Gemini CLI, Copilot and any ACP-compatible agent in one window — preserving your sign-ins, API keys and session history, with parallel sessions and multi-agent delegation.",
+  "category": "dev",
+  "platforms": [
+    "macOS",
+    "Windows",
+    "Linux"
+  ],
+  "website": null,
+  "source": "https://github.com/blueberrycongee/pipi",
+  "publishedAt": "2026-11-15T00:00:00+08:00",
+  "previews": [
+    "preview0.png",
+    "preview1.png",
+    "preview2.png",
+    "preview3.png"
+  ]
+}
