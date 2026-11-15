@@ -1,0 +1,19 @@
+{
+  "id": "rowtation",
+  "name": "Rowtation",
+  "author": "crizant",
+  "description": "View, edit and convert CSV, TSV, JSON, NDJSON and XML in the browser. Sort, search, find and replace with regex, edit cells with undo, then export to any of the five formats. Rust parses in WebAssembly and nothing is uploaded.",
+  "category": "utility",
+  "platforms": [
+    "Web"
+  ],
+  "website": "https://rowtation.pages.dev/",
+  "source": "https://github.com/crizant/rowtation",
+  "building": true,
+  "publishedAt": "2026-11-15T11:00:00Z",
+  "previews": [
+    "preview0.png",
+    "preview1.png",
+    "preview2.png"
+  ]
+}
