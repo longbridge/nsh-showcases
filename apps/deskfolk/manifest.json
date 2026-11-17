@@ -1,0 +1,20 @@
+{
+  "id": "deskfolk",
+  "name": "Deskfolk",
+  "author": "Blackman99",
+  "description": "Hand it off, walk away, return to results. Bots running on your own Claude Code, Codex or other agent take on multi-day jobs in a split-pane workbench: every turn on a flow and a task map, files kept and annotated by job, and the work checked before it counts as done.",
+  "category": "work",
+  "platforms": [
+    "macOS",
+    "Windows"
+  ],
+  "website": "https://blackman99.github.io/deskfolk/",
+  "source": "https://github.com/Blackman99/deskfolk",
+  "publishedAt": "2026-11-17T12:20:00+08:00",
+  "previews": [
+    "preview0.png",
+    "preview1.png",
+    "preview2.png",
+    "preview3.png"
+  ]
+}
