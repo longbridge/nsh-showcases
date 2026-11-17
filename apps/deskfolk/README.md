@@ -32,6 +32,6 @@ Talk to Claude Code or Codex itself in a folder of yours, in the same window as 
 
 ## A workbench of your own
 
-Split the window into panes of conversations, task maps, flows, terminals, the routine calendar, Spend and Usage. Bots can start work on a daily or weekly routine, and they get better with use: after a delivery, each Bot that tripped up reads the job's record and works what it learned into its own memories and skills. On macOS, pair a phone through a relay you run yourself, end-to-end encrypted, to follow and answer your conversations away from the desk.
+Split the window into panes of conversations, task maps, flows, terminals, the routine calendar, Spend and Usage, in a light or dark theme; on macOS and Windows 11 the panes can let the window's glass show through. Bots can start work on a daily or weekly routine, and they get better with use: after a delivery, each Bot that tripped up reads the job's record and works what it learned into its own memories and skills. On macOS, pair a phone through a relay you run yourself, end-to-end encrypted, to follow and answer your conversations away from the desk.
 
 [Website](https://blackman99.github.io/deskfolk/) · [GitHub repository](https://github.com/Blackman99/deskfolk)
