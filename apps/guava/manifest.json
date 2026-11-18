@@ -1,0 +1,12 @@
+{
+  "id": "guava",
+  "name": "guava",
+  "author": "it00021hot",
+  "description": "An unofficial native short-drama desktop client built with Native Shell and a pure Rust core for Windows and macOS. Features immersive playback, danmaku, GPU video enhancement, local downloads, library management, light/dark themes, and bilingual UI.",
+  "category": "media",
+  "platforms": ["Windows", "macOS"],
+  "website": null,
+  "source": "https://github.com/it00021hot/hongguo-desktop",
+  "publishedAt": "2026-11-18T12:00:00Z",
+  "previews": ["preview0.png"]
+}
