@@ -1,0 +1,13 @@
+{
+  "id": "podnook",
+  "name": "Podnook",
+  "author": "wisarmy",
+  "description": "A private, open-source clipboard history for macOS. Everything you copy stays in a local SQLite file on your Mac: summon it with one hotkey, search, pin and paste back into any app. Text, images, files and links, with no account and no network.",
+  "category": "work",
+  "platforms": ["macOS"],
+  "website": null,
+  "source": "https://github.com/wisarmy/podnook",
+  "building": true,
+  "publishedAt": "2026-11-19T00:00:00+08:00",
+  "previews": ["preview0.png", "preview1.png", "preview2.png"]
+}
