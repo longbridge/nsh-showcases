@@ -1,5 +1,5 @@
 {
-  "id": "colors",
+  "id": "colors-nsh",
   "name": "Colors",
   "author": "BafS",
   "description": "A handy app for copying colors from your favourite palette: click a swatch to copy its hex, right-click for rgb, hsl or oklch. Palettes: Material, Tailwind, Elementary, IBM, GitHub Primer, Radix, Atlassian and Nord.",

@@ -16,7 +16,7 @@ Native Shell (NSH) builds native UI for iOS, Android, macOS, Windows, Linux and 
 ## Submit an app
 
 1. Read [CONTRIBUTING.md](CONTRIBUTING.md), including the screenshot requirements for desktop windows, phone screens and the web.
-2. Fork this repository and create `apps/<app-id>/`. Use lowercase kebab-case, such as `nsh-gallery` or `longbridge-lite`. No uppercase letters, spaces, underscores, or leading/trailing hyphens.
+2. Fork this repository and create `apps/<app-id>/`. Use the lowercased GitHub repository name (or the lowercased product name for closed-source apps) in kebab-case, such as `nsh-gallery` or `longbridge-lite`. No uppercase letters, spaces, underscores, or leading/trailing hyphens.
 3. Add your screenshots directly to that folder. `previews` only accepts local filenames; external URLs and paths are forbidden.
 4. Add `manifest.json` using the example below. Optionally add a product-only `README.md` of at most 10 KB (10,240 UTF-8 bytes) to enable an App Stories detail page.
 5. Open a PR. Maintainers review the content, confirm the first inclusion timestamp and decide Featured placement. After merging, automation updates GitHub Stars and publishes the app.

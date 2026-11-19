@@ -1,5 +1,5 @@
 {
-  "id": "nsptonup",
+  "id": "switch-game-nsptonup",
   "name": "NSPtoNUP",
   "author": "HereOrCode",
   "description": "Convert Nintendo Switch NSP files into NUP packages. NSPtoNUP groups the base game, its update and DLC by title and merges them into a single NUP file, with a game library, covers and a conversion queue.",

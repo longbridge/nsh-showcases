@@ -10,7 +10,7 @@ Any app whose UI is built with Native Shell qualifies: a standalone NSH app, or 
 
 ## Files and naming
 
-Use `apps/<app-id>/manifest.json` with a lowercase kebab-case ID, such as `nsh-gallery` or `longbridge-lite`. Only lowercase ASCII letters, digits, and single hyphens between words are allowed. The manifest `id` must match its folder exactly. The display `name` may retain brand capitalization.
+Use `apps/<app-id>/manifest.json` with a lowercase kebab-case ID, such as `nsh-gallery` or `longbridge-lite`. Only lowercase ASCII letters, digits, and single hyphens between words are allowed. For open-source apps the ID is the lowercased GitHub repository name (for example `BafS/colors-nsh` → `colors-nsh`); closed-source apps use the lowercased product name. The manifest `id` must match its folder exactly. The display `name` may retain brand capitalization.
 
 Provide the required `author`, English-only `description`, and `website`/`source` fields. Descriptions are limited to 280 weighted characters, using the standard [Twitter counting rules](https://docs.x.com/fundamentals/counting-characters). List every platform the app ships on in `platforms`, using `iOS`, `Android`, `macOS`, `Windows`, `Linux` and `Web`. See [README.md](README.md) for all manifest fields. Maintainers manage Featured selection and order in the root `featured.json` array and confirm `publishedAt`; automation maintains Stars. Do not include `featured` in app manifests.
 
