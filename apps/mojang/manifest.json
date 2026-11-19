@@ -12,13 +12,14 @@
     "Android",
     "Web"
   ],
-  "website": "https://huacnlee.github.io/mojang/",
-  "source": "https://github.com/huacnlee/mojang",
+  "website": "https://huacnlee.github.io/mahjong/",
+  "source": "https://github.com/huacnlee/mahjong",
   "publishedAt": "2026-11-19T20:30:00+08:00",
   "previews": [
     "preview0.png",
     "preview1.png",
-    "preview2.png"
+    "preview2.png",
+    "preview3.png"
   ],
   "stars": 1,
   "starsUpdatedAt": "2026-11-19T13:42:23.525Z"
