@@ -1,0 +1,18 @@
+{
+  "id": "wonton",
+  "name": "Wonton",
+  "author": "Summe-rsnow",
+  "description": "A lightweight native Windows desktop tool for managing multiple Antigravity accounts, tracking real-time model quotas, switching credentials, and launching clients with an isolated per-process HTTP proxy.",
+  "category": "utility",
+  "platforms": [
+    "Windows"
+  ],
+  "website": "https://github.com/Summe-rsnow/Wonton",
+  "source": "https://github.com/Summe-rsnow/Wonton",
+  "publishedAt": "2026-11-19T21:38:00+08:00",
+  "previews": [
+    "preview0.png",
+    "preview1.png",
+    "preview2.png"
+  ]
+}
