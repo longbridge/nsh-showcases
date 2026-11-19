@@ -1,0 +1,10 @@
+{
+  "id": "nsh-omarchy",
+  "name": "nsh-omarchy",
+  "author": "huacnlee",
+  "description": "Omarchy's look for Native Shell apps: buttons, fields, menus, dialogs, tables and charts that follow the system's Omarchy theme as it changes. An nshm: install with nsh add nsh-omarchy and use the same components from Rust and TSX.",
+  "category": "component",
+  "source": "https://github.com/huacnlee/nsh-omarchy",
+  "website": null,
+  "publishedAt": "2026-11-19T00:00:00Z"
+}
