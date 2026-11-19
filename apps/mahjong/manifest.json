@@ -1,5 +1,5 @@
 {
-  "id": "mojang",
+  "id": "mahjong",
   "name": "Mojiang",
   "author": "huacnlee",
   "description": "Sichuan Mahjong, Xue Zhan Dao Di (Blood Battle), against three computer opponents with full rules: void suits, pong and kong, multiple winners, fan scoring and wind-and-rain payouts. Canvas-drawn tiles, chip stacks, spring animations, table sounds and Sichuan-dialect calls.",
@@ -12,13 +12,14 @@
     "Android",
     "Web"
   ],
-  "website": "https://huacnlee.github.io/mojang/",
-  "source": "https://github.com/huacnlee/mojang",
+  "website": "https://huacnlee.github.io/mahjong/",
+  "source": "https://github.com/huacnlee/mahjong",
   "publishedAt": "2026-11-19T20:30:00+08:00",
   "previews": [
     "preview0.png",
     "preview1.png",
-    "preview2.png"
+    "preview2.png",
+    "preview3.png"
   ],
   "stars": 3,
   "starsUpdatedAt": "2026-11-19T14:34:14.265Z"
