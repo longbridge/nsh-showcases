@@ -1,0 +1,12 @@
+{
+  "id": "mojang",
+  "name": "血战到底",
+  "author": "huacnlee",
+  "description": "Sichuan Mahjong, Xue Zhan Dao Di (Blood Battle): play against three computer opponents with full rules — choosing a void suit, pong and kong, multiple winners per hand, scoring by fan, and wind-and-rain payouts. Spring animations and synthesized sound.",
+  "category": "media",
+  "platforms": ["macOS", "Windows", "Linux", "iOS", "Android", "Web"],
+  "website": "https://huacnlee.github.io/mojang/",
+  "source": "https://github.com/huacnlee/mojang",
+  "publishedAt": "2026-11-19T20:30:00+08:00",
+  "previews": ["preview0.png", "preview1.png"]
+}
