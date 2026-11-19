@@ -1,8 +1,8 @@
 {
   "id": "mojang",
-  "name": "血战到底",
+  "name": "Mojiang",
   "author": "huacnlee",
-  "description": "Sichuan Mahjong, Xue Zhan Dao Di (Blood Battle): play against three computer opponents with full rules — choosing a void suit, pong and kong, multiple winners per hand, scoring by fan, and wind-and-rain payouts. Spring animations and synthesized sound.",
+  "description": "Sichuan Mahjong, Xue Zhan Dao Di (Blood Battle), against three computer opponents with full rules: void suits, pong and kong, multiple winners, fan scoring and wind-and-rain payouts. Canvas-drawn tiles, chip stacks, spring animations, table sounds and Sichuan-dialect calls.",
   "category": "media",
   "platforms": [
     "macOS",
@@ -17,7 +17,8 @@
   "publishedAt": "2026-11-19T20:30:00+08:00",
   "previews": [
     "preview0.png",
-    "preview1.png"
+    "preview1.png",
+    "preview2.png"
   ],
   "stars": 1,
   "starsUpdatedAt": "2026-11-19T13:42:23.525Z"

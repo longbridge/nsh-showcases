@@ -1,6 +1,6 @@
-# 血战到底
+# Mojiang
 
-A Sichuan Mahjong game in the Xue Zhan Dao Di (Blood Battle) style, built entirely in TSX with Native Shell. You play against three computer opponents on one table, on desktop, phone or the web.
+A Sichuan Mahjong game in the Xue Zhan Dao Di (Blood Battle) style, built entirely in TSX with Native Shell. You play against three computer opponents on one table, on desktop, phone or the web. Its Chinese name is 血战到底.
 
 ![The table in dark mode](preview0.png)
 
@@ -14,16 +14,23 @@ A Sichuan Mahjong game in the Xue Zhan Dao Di (Blood Battle) style, built entire
 
 ## Playing
 
+- Each player starts with ¥5,000 and the base stake is ¥10. A chip stack and the balance sit in front of every player and change as soon as money moves.
 - Tap a tile to select it and tap again to discard, or use the arrow keys and Enter on desktop.
 - Win, kong, pong and pass appear when a discard can be claimed, with H, G, P and Esc as shortcuts.
 - The status line shows what you are waiting for after each discard.
-- Each round's results show every player's hand, fan and payout; running totals are kept between rounds.
+- Each round's results show every player's hand, fan and payout.
+
+![Choosing a void suit, the tile back and the voice](preview1.png)
 
 ## Design
 
-- Tiles are drawn with the traditional characters, dots and bamboo patterns, in light and dark themes.
-- Tiles lift, drop and land on springs; claims and wins pop in; scores bump when they change.
-- Short synthesized sounds for draws, discards, claims and wins, with a toggle.
-- Phones play in landscape with a compact table that keeps all fourteen tiles in view.
+- Every tile is drawn on a Canvas: an ivory face with a jade edge and a passing sheen, traditional characters, dots and bamboo, and a peacock for one of bamboo.
+- Three tile backs to choose at the start of a round: cinnabar, sapphire and amber.
+- Tiles lift, drop and land on springs; the hand ripples as the pointer moves across it; claims and wins pop in.
+- Table sounds are synthesized: the shuffle, drawing a tile, the slap of a discard, the clack of pong and kong.
+- Pong, kong, self-drawn win and win are called out in Sichuan dialect, with a male or a female voice for you; the computers have voices of their own.
+- Light and dark themes; phones play in landscape with a compact table that keeps all fourteen tiles in view.
+
+![The results of a round](preview2.png)
 
 Source: https://github.com/huacnlee/mojang
