@@ -1,0 +1,21 @@
+{
+  "id": "reminder",
+  "name": "Reminder",
+  "author": "b-yp",
+  "description": "A lightweight desktop reminder card for desk routines: drink water, stand up, rest eyes, and log habits. Features interval timers, fixed daily schedules, mini capsule mode, and full offline persistence.",
+  "category": "work",
+  "platforms": [
+    "macOS",
+    "Windows",
+    "Linux"
+  ],
+  "website": null,
+  "source": "https://github.com/b-yp/reminder",
+  "publishedAt": "2026-11-21T07:33:00Z",
+  "previews": [
+    "preview0.png",
+    "preview1.png",
+    "preview2.png",
+    "preview3.png"
+  ]
+}
