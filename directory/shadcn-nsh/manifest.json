@@ -1,0 +1,10 @@
+{
+  "id": "shadcn-nsh",
+  "name": "shadcn-nsh",
+  "author": "aningdev",
+  "description": "Styled components for Native Shell in the shape shadcn/ui gives React: a CLI and registry copy each component, its theme and the shared looks it uses into your app as files you own. Built on nsh/base, themed from data, and adapting to phone, desktop and the terminal.",
+  "category": "component",
+  "source": "https://github.com/aningdev/shadcn-nsh",
+  "website": "https://shadcn-nsh.aning.dev/",
+  "publishedAt": "2026-11-21T00:00:00Z"
+}
