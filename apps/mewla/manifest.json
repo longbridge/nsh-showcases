@@ -1,0 +1,12 @@
+{
+  "id": "mewla",
+  "name": "mewla",
+  "author": "daoleno",
+  "description": "A self-hosted remote for your coding agents. Tell Brain the goal; it splits the work across Claude Code, Codex and other CLIs running in real terminals on your computer, reviews the results and pings you only when it matters.",
+  "category": "dev",
+  "platforms": ["iOS", "Android", "Web"],
+  "website": "https://mewla.ai",
+  "source": "https://github.com/daoleno/mewla",
+  "publishedAt": "2026-11-21T00:35:00Z",
+  "previews": ["preview0.png", "preview1.png"]
+}
