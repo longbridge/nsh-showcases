@@ -1,0 +1,18 @@
+{
+  "id": "eta",
+  "name": "Eta",
+  "author": "0xfe-project",
+  "description": "An open-source workbench for always-on AI agents that run on your own machine with your own model accounts. The Native Shell client lets you chat with agents, hand them tasks and routines, and approve their work from the web, iOS and Android.",
+  "category": "dev",
+  "platforms": [
+    "iOS",
+    "Android",
+    "Web"
+  ],
+  "website": "https://eta.0xfe.tech",
+  "source": "https://github.com/0xfe-project/eta",
+  "publishedAt": "2026-11-22T00:22:13Z",
+  "previews": [
+    "preview0.png"
+  ]
+}
