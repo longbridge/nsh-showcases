@@ -1,0 +1,10 @@
+{
+  "id": "nsh-o11y",
+  "name": "nsh-o11y",
+  "author": "JetSquirrel",
+  "description": "An nshm of observability charts for Native Shell: a TSX TimeSeriesChart on a native canvas that stays fast at millions of points, with live data, zoom and pan, thresholds, annotations, synced panels, and an opt-in Rust backend for large data.",
+  "category": "component",
+  "source": "https://github.com/JetSquirrel/nsh-o11y",
+  "website": "https://jetsquirrel.github.io/nsh-o11y/",
+  "publishedAt": "2026-11-24T00:00:00Z"
+}
