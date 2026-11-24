@@ -1,0 +1,11 @@
+{
+  "id": "a2ui-nsh",
+  "name": "a2ui-nsh",
+  "author": "yerlytech",
+  "description": "An A2UI 1.0 renderer for Native Shell, written in TSX. Turns agent-described A2UI JSON into native controls on desktop, web and terminal, with all 18 Basic Catalog components and upstream conformance tests.",
+  "category": "library",
+  "platforms": ["macOS", "Web"],
+  "source": "https://github.com/yerlytech/a2ui-nsh",
+  "website": null,
+  "publishedAt": "2026-11-24T00:00:00Z"
+}
