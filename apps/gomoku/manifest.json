@@ -1,0 +1,12 @@
+{
+  "id": "gomoku",
+  "name": "Yi Jing",
+  "author": "ywenhao",
+  "description": "A cross-platform board game collection: Gomoku, Go, Liuzichong, Ludo, Chinese Checkers, Chess, Xiangqi and Junqi, with AI opponents, guided tutorials, rule explanations, puzzles and game record replay. One TSX codebase.",
+  "category": "game",
+  "platforms": ["iOS", "Android", "macOS", "Windows", "Linux", "Web"],
+  "website": null,
+  "source": "https://github.com/ywenhao/gomoku",
+  "publishedAt": "2026-11-25T00:00:00Z",
+  "previews": ["preview0.png", "preview1.png"]
+}
