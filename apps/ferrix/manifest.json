@@ -1,0 +1,19 @@
+{
+  "id": "ferrix",
+  "name": "Ferrix",
+  "author": "ryujane",
+  "description": "A native Redis desktop client for standalone servers, clusters and Sentinel, with key search, tabs, a folding JSON editor, a Redis console and server monitoring, in dark and light themes.",
+  "category": "dev",
+  "platforms": [
+    "macOS",
+    "Windows",
+    "Linux"
+  ],
+  "source": "https://github.com/ryujane/Ferrix",
+  "publishedAt": "2026-11-25T00:00:00Z",
+  "previews": [
+    "preview0.png",
+    "preview1.png",
+    "preview2.png"
+  ]
+}
