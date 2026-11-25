@@ -1,6 +1,6 @@
-# nsvim
+# NSVim
 
-nsvim is a modal code editor for opening code, reading it, finding your way around it and making quick edits. It draws its interface with Native Shell, using GTK 4 on Linux, AppKit on macOS and WinUI on Windows.
+NSVim is a modal code editor for opening code, reading it, finding your way around it and making quick edits. It draws its interface with Native Shell, using GTK 4 on Linux, AppKit on macOS and WinUI on Windows.
 
 ## Vim, or classic keys
 
@@ -12,7 +12,7 @@ Tree-sitter text objects and motions work in 13 languages. LSP brings diagnostic
 
 ## Works with your AI agent
 
-There is no AI inside. Claude Code, Codex or any CLI agent sees what you look at and drives nsvim over its `mcp` or `ctl` command. An agent proposes a change as a diff, and you press `y` to accept it or `n` to reject it.
+There is no AI inside. Claude Code, Codex or any CLI agent sees what you look at and drives NSVim over its `mcp` or `ctl` command. An agent proposes a change as a diff, and you press `y` to accept it or `n` to reject it.
 
 ![An agent's proposed change shown as a diff](preview1.png)
 
