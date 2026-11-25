@@ -1,0 +1,22 @@
+{
+  "id": "nsvim",
+  "name": "nsvim",
+  "author": "Jason Lee",
+  "description": "A modal code editor with Vim keys or classic keys, drawn with native views. Tree-sitter, LSP, fuzzy finder, project search and a git-aware file tree, and your CLI AI agent can drive it over MCP.",
+  "category": "dev",
+  "platforms": [
+    "macOS",
+    "Windows",
+    "Linux"
+  ],
+  "website": "https://huacnlee.github.io/nsvim/",
+  "source": "https://github.com/huacnlee/nsvim",
+  "publishedAt": "2026-11-25T03:16:02Z",
+  "previews": [
+    "preview0.png",
+    "preview1.png",
+    "preview2.png",
+    "preview3.png",
+    "preview4.png"
+  ]
+}
