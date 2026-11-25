@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
-import { mkdtemp, mkdir, writeFile, rm } from 'node:fs/promises';
+import { mkdtemp, mkdir, writeFile, rm, readdir } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { validateDirectory } from '../scripts/validate.ts';
@@ -49,4 +49,14 @@ test('allows only the manifest in an entry folder and limits descriptions', asyn
   await writeFile(join(root, 'directory/secure-storage/logo.png'), 'x');
   await assert.rejects(validateDirectory(root), /only manifest.json/);
   await assert.rejects(validateDirectory(await fixture(t, { description: 'a'.repeat(281) })), /280/);
+});
+test('validates directory-featured.json against directory IDs', async t => {
+  const root = await fixture(t, {});
+  const [id] = (await readdir(join(root, 'directory'))).filter(name => name !== 'README.md');
+  await writeFile(join(root, 'directory-featured.json'), JSON.stringify([id]));
+  assert.equal(await validateDirectory(root), 1);
+  for (const list of [['missing'], [id, id], {}]) {
+    await writeFile(join(root, 'directory-featured.json'), JSON.stringify(list));
+    await assert.rejects(validateDirectory(root), /directory-featured/);
+  }
 });

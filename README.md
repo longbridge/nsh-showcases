@@ -109,6 +109,8 @@ The Directory lists community projects that other Native Shell developers build 
 | `publishedAt` | First inclusion time, confirmed by maintainers. |
 | `stars`, `starsUpdatedAt` | Automation-owned, as for apps. |
 
+The Directory lists entries by GitHub Stars. Maintainers can pin entries to the top, in order, by listing their IDs in the root `directory-featured.json`.
+
 ## Automated updates and publication
 
 On merges to `main`, the workflow validates the catalog, refreshes GitHub Stars for apps and directory entries, commits updated manifests, and dispatches `website.yml` in `longbridge/nsh`. The same refresh runs every **Monday at 00:00 UTC (08:00 Singapore time)**, and can be run manually.

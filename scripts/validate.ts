@@ -28,6 +28,7 @@ export async function validateDirectory(root) {
   try { entries = await readdir(join(root, 'directory'), { withFileTypes: true }); }
   catch (error) { if (error.code === 'ENOENT') return 0; throw error; }
   let count = 0;
+  const ids = [];
   for (const entry of entries) {
     const id = entry.name;
     if (id === 'README.md' && entry.isFile()) continue;
@@ -53,7 +54,12 @@ export async function validateDirectory(root) {
     assert(item.stars == null || (Number.isInteger(item.stars) && item.stars >= 0), `directory/${id}: invalid stars`);
     assert(item.starsUpdatedAt == null || isDate(item.starsUpdatedAt), `directory/${id}: invalid starsUpdatedAt`);
     count++;
+    ids.push(id);
   }
+  let featured = [];
+  try { featured = JSON.parse(await readFile(join(root, 'directory-featured.json'), 'utf8')); }
+  catch (error) { if (error.code !== 'ENOENT') throw error; }
+  assert(Array.isArray(featured) && new Set(featured).size === featured.length && featured.every(id => ids.includes(id)), 'Invalid directory-featured.json');
   return count;
 }
 

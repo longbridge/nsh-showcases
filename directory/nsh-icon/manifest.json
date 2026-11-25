@@ -1,0 +1,10 @@
+{
+  "id": "nsh-icon",
+  "name": "nsh-icon",
+  "author": "Jason Lee",
+  "description": "Lucide, Heroicons, Tabler, Phosphor and Remix icons for Native Shell apps, drawn as vectors in the surrounding text color, from Rust or TSX. Only the icons an app uses go into its binary and bundle.",
+  "category": "component",
+  "source": "https://github.com/huacnlee/nsh-icon",
+  "website": null,
+  "publishedAt": "2026-11-25T04:10:00Z"
+}
