@@ -2,10 +2,12 @@
   "id": "pobt",
   "name": "pobt",
   "author": "Jason Lee",
-  "description": "Run the Path of Building Community you already have, for Path of Exile 1 and 2, with its whole interface translated into Simplified Chinese, Traditional Chinese or Korean. Your build files are never modified.",
+  "description": "A Path of Building for Path of Exile 1 and 2, in Chinese or Korean. Its build editor is redrawn in Native Shell, while Path of Building's own Lua does every calculation in the background. The classic translated Lua window remains as a legacy option.",
   "category": "utility",
   "platforms": [
-    "Windows"
+    "Windows",
+    "macOS",
+    "Linux"
   ],
   "website": "https://huacnlee.github.io/pobt/",
   "source": "https://github.com/huacnlee/pobt",
@@ -13,7 +15,9 @@
   "previews": [
     "preview0.png",
     "preview1.png",
-    "preview2.png"
+    "preview2.png",
+    "preview3.png",
+    "preview4.png"
   ],
   "stars": 1,
   "starsUpdatedAt": "2026-11-24T08:30:42.258Z"
