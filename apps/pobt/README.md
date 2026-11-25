@@ -20,13 +20,13 @@ That interface is one of the heaviest Native Shell apps so far:
 - **An external engine as the source of truth.** Every edit goes to Path of Building's Lua running in the background, and the results come back to the screens. The interface has to stay in step with Lua's state, update only what changed, and save build files Path of Building itself can open.
 - **Text, input and translation.** Chinese and Korean text, input methods, selection and scrolling must work properly. These were weak points of the classic window, which drew text through Path of Building's own graphics runtime.
 
-A related project, [go-pob](https://github.com/Vilsol/go-pob), takes the opposite route on both sides. It rewrites Path of Building's calculations in Go, and its interface is a web front end in Svelte and TypeScript, hosted at [pob.gg](https://pob.gg). Its desktop app shows the same web page in the system WebView (WebView2 on Windows, WebKitGTK on Linux). POBT keeps Path of Building's Lua for the numbers and draws its interface with Native Shell instead of a web view.
+A related project, go-pob, takes the opposite route on both sides. It rewrites Path of Building's calculations in Go, and its interface is a web front end in Svelte and TypeScript, hosted at pob.gg. Its desktop app shows the same web page in the system WebView (WebView2 on Windows, WebKitGTK on Linux). POBT keeps Path of Building's Lua for the numbers and draws its interface with Native Shell instead of a web view.
 
 The app is written in TSX for the interface, with a Rust module (`ext/pobt-native`) for the native side. It shows that Native Shell can carry a production desktop app of this size, not only small demos. Performance work continues, especially on the passive tree.
 
 ## Measurements
 
-The [POBT README](https://github.com/huacnlee/pobt#performance) compares POBT 0.2.0 with Path of Building 2.68.1 on the same Windows PC, with the same build open on the passive tree. That release used the classic interface on POBT's own Rust graphics runtime, not the Native Shell screens:
+The performance section of the [POBT README](https://github.com/huacnlee/pobt) compares POBT 0.2.0 with Path of Building 2.68.1 on the same Windows PC, with the same build open on the passive tree. That release used the classic interface on POBT's own Rust graphics runtime, not the Native Shell screens:
 
 | | POBT 0.2.0 | Path of Building 2.68.1 |
 | --- | ---: | ---: |
