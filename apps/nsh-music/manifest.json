@@ -1,0 +1,12 @@
+{
+  "id": "nsh-music",
+  "name": "nsh-music",
+  "author": "Duskriver",
+  "description": "A lightweight native NetEase Cloud Music client for macOS, Linux, Windows, and terminal (TUI), powered by a Rust audio engine with real-time FFT spectrum visuals, synced lyrics, and an NSH TSX interface.",
+  "category": "media",
+  "platforms": ["macOS", "Linux", "Windows"],
+  "website": "https://github.com/Duskriver/nsh-music",
+  "source": "https://github.com/Duskriver/nsh-music",
+  "publishedAt": "2026-11-26T00:00:00Z",
+  "previews": ["preview0.png", "preview1.png"]
+}
