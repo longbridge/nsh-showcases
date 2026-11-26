@@ -1,7 +1,7 @@
 {
   "id": "brewman",
   "name": "Brewman",
-  "author": "Jason Lee",
+  "author": "huacnlee",
   "description": "Browse installed Homebrew formulae and casks, inspect package details, and see which packages have updates in a native macOS app.",
   "category": "dev",
   "platforms": [

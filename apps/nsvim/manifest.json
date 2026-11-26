@@ -1,7 +1,7 @@
 {
   "id": "nsvim",
   "name": "nsvim",
-  "author": "Jason Lee",
+  "author": "huacnlee",
   "description": "A modal code editor with Vim keys or classic keys, drawn with native views. Tree-sitter, LSP, fuzzy finder, project search and a git-aware file tree, and your CLI AI agent can drive it over MCP.",
   "category": "dev",
   "platforms": [

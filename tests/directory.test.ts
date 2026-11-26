@@ -41,6 +41,7 @@ test('requires an https source, matching ID, author and publication date', async
   await assert.rejects(validateDirectory(await fixture(t, { source: 'http://github.com/a/b' })), /source/);
   await assert.rejects(validateDirectory(await fixture(t, { id: 'other' })), /ID/);
   await assert.rejects(validateDirectory(await fixture(t, { author: '' })), /author/);
+  await assert.rejects(validateDirectory(await fixture(t, { author: 'Jason Lee' })), /huacnlee/);
   await assert.rejects(validateDirectory(await fixture(t, { publishedAt: 'today' })), /publishedAt/);
   await assert.rejects(validateDirectory(await fixture(t, {}, 'Bad_Id')), /folder/);
 });
