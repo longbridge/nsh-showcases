@@ -1,7 +1,7 @@
 {
   "id": "pobt",
   "name": "pobt",
-  "author": "Jason Lee",
+  "author": "huacnlee",
   "description": "A Path of Building for Path of Exile 1 and 2, in Chinese or Korean. Its build editor is redrawn in Native Shell, while Path of Building's own Lua does every calculation in the background. The classic translated Lua window remains as a legacy option.",
   "category": "utility",
   "platforms": [

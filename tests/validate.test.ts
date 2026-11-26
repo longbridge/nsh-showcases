@@ -61,6 +61,7 @@ test('rejects external previews and paths escaping the app directory', async t =
 test('rejects missing previews, missing authors, and invalid publication dates', async t => {
   await assert.rejects(validateCatalog(await fixture(t, { previews: ['preview1.png'] })), /preview1.png/);
   await assert.rejects(validateCatalog(await fixture(t, { author: '' })), /author/);
+  await assert.rejects(validateCatalog(await fixture(t, { author: 'Jason Lee' })), /huacnlee/);
   await assert.rejects(validateCatalog(await fixture(t, { publishedAt: 'yesterday' })), /publishedAt/);
 });
 

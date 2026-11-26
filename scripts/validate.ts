@@ -16,6 +16,12 @@ export const DIRECTORY_CATEGORIES = ['library', 'component', 'template', 'tool']
 
 const ID = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 const isText = value => typeof value === 'string' && value.trim().length > 0;
+/** Maintainer names that must use their GitHub login on cards. */
+const AUTHOR_ALIASES = { 'jason lee': 'huacnlee' };
+const checkAuthor = (author, where) => {
+  const login = AUTHOR_ALIASES[String(author).trim().toLowerCase()];
+  assert(!login, `${where}: author must be the GitHub login ${login}, not ${author}`);
+};
 const isDate = value => typeof value === 'string' && /^\d{4}-\d{2}-\d{2}T.*(?:Z|[+-]\d{2}:\d{2})$/.test(value) && Number.isFinite(Date.parse(value));
 
 /**
@@ -40,6 +46,7 @@ export async function validateDirectory(root) {
     for (const key of Object.keys(item)) assert(allowed.includes(key), `directory/${id}: unknown field ${key}`);
     assert.equal(item.id, id, `directory/${id}: manifest ID must match its folder`);
     assert(isText(item.name) && isText(item.author), `directory/${id}: name and author are required`);
+    checkAuthor(item.author, `directory/${id}`);
     assert(DIRECTORY_CATEGORIES.includes(item.category), `directory/${id}: invalid category; use ${DIRECTORY_CATEGORIES.join(', ')}`);
     assert(isText(item.description), `directory/${id}: English description required`);
     assert(twitterText.parseTweet(item.description).weightedLength <= 280, `directory/${id}: description exceeds 280 weighted characters`);
@@ -83,6 +90,7 @@ export async function validateCatalog(root) {
     const app = JSON.parse(await readFile(join(folder, 'manifest.json'), 'utf8'));
     assert.equal(app.id, id, `${id}: manifest ID must match its folder`);
     assert(text(app.author), `${id}: author is required`);
+    checkAuthor(app.author, id);
     assert(text(app.name) && CATEGORIES.includes(app.category), `${id}: invalid name or category`);
     assert(Array.isArray(app.platforms) && app.platforms.length, `${id}: missing platforms`);
     for (const platform of app.platforms) assert(PLATFORMS.includes(platform), `${id}: unknown platform ${platform}; use ${PLATFORMS.join(', ')}`);
