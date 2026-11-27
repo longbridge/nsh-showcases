@@ -1,0 +1,18 @@
+{
+  "id": "kino",
+  "name": "Kino",
+  "author": "diguo520",
+  "description": "Kino is a Windows desktop app for browsing film and series catalogs and playing them from configurable web sources, with source checks, favorites, resume-watching history, picture-in-picture and per-title chat rooms. Built with Native Shell on GPUI.",
+  "category": "media",
+  "platforms": [
+    "Windows"
+  ],
+  "website": null,
+  "source": "https://github.com/diguo520/kino",
+  "publishedAt": "2026-11-27T17:32:00+08:00",
+  "previews": [
+    "preview0.png",
+    "preview1.png",
+    "preview2.png"
+  ]
+}
