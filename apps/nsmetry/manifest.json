@@ -1,0 +1,23 @@
+{
+  "id": "nsmetry",
+  "name": "NsMetry",
+  "author": "huacnlee",
+  "description": "Privacy-friendly analytics for your own apps and websites, self-hosted on Cloudflare's free plan. Active users, retention, custom events and web traffic, read in a native app or by your AI agent over MCP. No cookies, no personal data at rest.",
+  "category": "dev",
+  "platforms": [
+    "iOS",
+    "Android",
+    "macOS",
+    "Windows",
+    "Linux",
+    "Web"
+  ],
+  "website": "https://huacnlee.github.io/nsmetry/",
+  "source": "https://github.com/huacnlee/nsmetry",
+  "publishedAt": "2026-11-27T09:23:48Z",
+  "previews": [
+    "preview0.png",
+    "preview1.png",
+    "preview2.png"
+  ]
+}
