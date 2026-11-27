@@ -1,0 +1,17 @@
+{
+  "id": "nsh-oauth2",
+  "name": "nsh-oauth2",
+  "author": "longbridge",
+  "description": "An nshm: install with nsh add nsh-oauth2. OAuth 2 sign-in for Native Shell apps from TSX or Rust: opens the provider's page in ASWebAuthenticationSession on iOS, a Custom Tab on Android or the system browser on desktop, and returns the redirect URL to your app.",
+  "category": "library",
+  "platforms": [
+    "iOS",
+    "Android",
+    "macOS",
+    "Windows",
+    "Linux"
+  ],
+  "source": "https://github.com/longbridge/nsh-oauth2",
+  "website": null,
+  "publishedAt": "2026-11-27T00:00:00Z"
+}
