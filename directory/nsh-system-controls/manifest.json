@@ -1,0 +1,14 @@
+{
+  "id": "nsh-system-controls",
+  "name": "nsh-system-controls",
+  "author": "longbridge",
+  "description": "An nshm: install with nsh add nsh-system-controls. The system's segmented control, switch and date and time picker for Native Shell apps, from TSX or Rust: UIKit's on iOS (Liquid Glass on iOS 26) and the framework's on Android, with their look, haptics and screen reader support.",
+  "category": "component",
+  "platforms": [
+    "iOS",
+    "Android"
+  ],
+  "source": "https://github.com/longbridge/nsh-system-controls",
+  "website": null,
+  "publishedAt": "2026-11-28T00:00:00Z"
+}
