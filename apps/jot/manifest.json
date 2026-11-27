@@ -1,0 +1,17 @@
+{
+  "id": "jot",
+  "name": "Jot",
+  "author": "madcodelife",
+  "description": "Quick notes for macOS that you share with your AI apps. Double-press Option and one field both searches your notes and names a new one. Notes are plain Markdown files, to-dos in them become reminders, and Claude, Cursor or Codex read and add to the same notes over MCP.",
+  "category": "work",
+  "platforms": [
+    "macOS"
+  ],
+  "website": "https://madcodelife.github.io/jot/",
+  "source": "https://github.com/madcodelife/jot",
+  "publishedAt": "2026-11-28T00:00:00Z",
+  "previews": [
+    "preview0.png",
+    "preview1.png"
+  ]
+}
