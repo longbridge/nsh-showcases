@@ -22,6 +22,10 @@ A task line in any note is a to-do, and writing a time makes it a reminder with 
 
 Jot carries an MCP server that works on the notes folder whether or not Jot is running. Settings connects Claude Code, Claude, Cursor, VS Code, Windsurf, Codex or Gemini CLI in one click. Then you ask them to note a command, remind you to send the weekly report on Friday, or tell you what is on your list today. A note an app writes carries its name, and a note you lock stays read-only for every app.
 
+When an app writes on this Mac, an island opens out of the notch at the top of the screen: the app's name and the note's title in a glow of flowing colors while the note is written, then a check once it is saved. A click on it opens the note.
+
+<video src="island.mp4" poster="island.png" controls muted loop playsinline></video>
+
 ## Plain files, yours
 
 One Markdown file per note, in iCloud Drive or any folder you pick. No account, no server and no analytics. Notes from Apple Notes come in with one import. Light and dark, eight themes, and English, Simplified and Traditional Chinese and Japanese.
