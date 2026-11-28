@@ -1,0 +1,16 @@
+{
+  "id": "nsh-longbridge",
+  "name": "nsh-longbridge",
+  "author": "longbridge",
+  "description": "An nshm: install with nsh add github:longbridge/nsh-longbridge. A component library with a neutral look on nsh/base's behavior, one Rust implementation for TSX and Rust apps. Every look is a design token, and shadcn/ui themes work as theme files.",
+  "category": "component",
+  "platforms": [
+    "macOS",
+    "Windows",
+    "Linux",
+    "Web"
+  ],
+  "source": "https://github.com/longbridge/nsh-longbridge",
+  "website": "https://longbridge.github.io/nsh-longbridge/",
+  "publishedAt": "2026-11-28T00:00:00Z"
+}
